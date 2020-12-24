@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>切版練習2</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <style type="text/css">
@@ -12,6 +12,7 @@
             padding: 0;
             list-style: none;
             font-family: 'Noto Sans TC', sans-serif;
+
         }
         .wrap{
             width: 100%;
@@ -23,7 +24,7 @@
         }
         .item img{
             width: 100%;
-            vertical-align: middle;
+            vertical-align:middle;
         }
 
         .item .txt{
@@ -38,6 +39,7 @@
             justify-content: center;
             flex-direction:column;
             opacity: 0;
+            transition: opacity 0.5s;
         }
         .item:hover .txt{
             opacity: 1;
@@ -46,6 +48,18 @@
             font-size: 28px;
             color: #ff0;
             font-weight: 500;
+        }
+        .item h2:after{
+            content: '';
+            display: block;
+            width: 0%;
+            height: 2px;
+            margin: 10px 0;
+            background-color: #ff0;
+            transition: width .5s .5s;
+        }
+        .item:hover h2:after{
+            width: 100%;
         }
         .item p{
             font-size: 18px;
@@ -63,8 +77,8 @@
                 <p>這個很常見，不會就去面壁</p>
             </div>
         </div>
-    </div>
-    <div class="wrap">
+
+
         <div class="item">
             <img src="https://picsum.photos/500/400?random=10">
             <div class="txt">
@@ -72,8 +86,8 @@
                 <p>有空打這個電話</p>
             </div>
         </div>
-    </div>
-    <div class="wrap">
+
+
         <div class="item">
             <img src="https://picsum.photos/500/400?random=20">
             <div class="txt">
@@ -81,8 +95,8 @@
                 <p>發票比鈔票多</p>
             </div>
         </div>
-    </div>
-    <div class="wrap">
+
+
         <div class="item">
             <img src="https://picsum.photos/500/400?random=30">
             <div class="txt">
