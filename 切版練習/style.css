@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  color: #f00;
+  font-size: 60px;
+}
+/* navbar的顏色設計 */
+nav{
+  background-color: black;
+  text-align: center;
+}
+/* navbar的連結設定 */
+nav a{
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 16px;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+nav a:hover{
+  background-color: orange;
+}
+
+p{
+  color: #999;
+  margin-bottom: 30px;
+}
